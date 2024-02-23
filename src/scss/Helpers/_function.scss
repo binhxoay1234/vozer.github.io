@@ -1,0 +1,9 @@
+@each $stt in (1,2,3,4,5){
+    .discover_item_#{$stt}{
+        background-image: url('../img/oto#{$stt}.jpg');
+        background-size: 100% 50%;
+        background-repeat: no-repeat;
+        background-color: $color-white;
+        
+    }
+}

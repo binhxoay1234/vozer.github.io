@@ -1,0 +1,197 @@
+#our_vehicles {
+  padding-bottom: $pd-2;
+  background-color: $color-grey;
+  #our_vehicles_carousel {
+    .carousel-inner {
+      .carousel-item {
+        img {
+          background-size: cover;
+          height: 37.5rem;
+        }
+      }
+    }
+    .carousel-caption {
+      left: 6%;
+      top: 8%;
+      width: 30%;
+      font-size: $font-size-1;
+      text-align: unset;
+      > p {
+        font-weight: bold;
+        span {
+          font-weight: normal;
+        }
+      }
+      > p:nth-child(2) {
+        font-weight: 300;
+        margin-bottom: $mg-3;
+      }
+      .btn_explore_config {
+        padding: $pd-1 - 3 $pd-4;
+      }
+      .carousel_caption_detail {
+        margin-bottom: $mg-3;
+        .carousel_detail_content {
+          h2 {
+            font-weight: 300;
+            font-size: $font-size-4 - 0.4rem;
+          }
+          p {
+            font-size: $font-size-1;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    
+    .my_indicators {
+      display: flex;
+      justify-content: center;
+      justify-content: space-around;
+      width: 70%;
+      margin: $mg-2 auto;
+      
+      li {
+        list-style: none;
+        cursor: pointer;
+        color: $color-dark-blue-100;
+        font-weight: bold;
+        padding: $pd-1 $pd-2;
+      }
+      li.active {
+        color: white;
+        background-color: $color-blue-100;
+        position: relative;
+        border-radius: 4rem;
+        &::before {
+          content: "";
+          position: absolute;
+          z-index: 1;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: -34px;
+          border-top: 15px solid white;
+          border-left: 15px solid transparent;
+          border-right: 15px solid transparent;
+        }
+      }
+    }
+
+  }
+  .carousel-control-next, .carousel-control-prev{
+    width: 5%;
+  }
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    width: 4.5rem;
+    height: 4.5rem;
+    padding: $pd-5 + 5 $pd-3;
+    background-color: $color-blue-overlay;
+    border-radius: 5px;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+  }
+  .carousel-control-next-icon {
+    right: 0;
+  }
+  .carousel-control-prev-icon {
+    left: 0;
+  }
+  .carousel_indicators_xs{
+    width: 50%;
+    margin: auto;
+    background-color: $color-white;
+    border: $border-1;
+    position: absolute;
+    top: -3.4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    .indicatos_xs_header{
+      
+        cursor: pointer;
+        padding: 0 $pd-2;
+    }
+    h1{
+        font-size: $font-size-1 - 0.2rem;
+        margin: $mg-1;
+        color: $color-blue-200;
+        font-weight: 300;
+        padding: $pd-2 - 3 $pd-2;
+        span{
+            font-weight: bold;
+            color: $color-blue-200;
+        }
+    }
+    i{
+        font-size: $font-size-4 - 1.2rem;
+        color: $color-blue-100;
+        transition: all .5s;
+        margin-left: auto;
+    }
+    ul{
+        border-top: $border-3;
+        padding-left: 0;
+        margin-bottom: 0;
+        display: none;
+        padding: 0 $pd-2;
+    }
+    ul li{
+        list-style: none;
+        color: $color-blue-200;
+        font-weight: bold;
+        font-size: $font-size-1 - 0.2rem;
+        padding: $pd-2 $pd-2;
+        cursor: pointer;
+    }
+  }
+}
+
+//RESPONSIVE
+@media screen and (min-width: 768px) and (max-width: 1124px) {
+  #our_vehicles {
+    #our_vehicles_carousel {
+      .carousel-caption {
+        width: 50%;
+      }
+    }
+  }
+}
+@media screen and (min-width:992px) {
+  #our_vehicles{
+    #our_vehicles_carousel{
+      .my_indicators{
+        width: 70%!important;
+      }
+    }
+  }  
+}
+
+@media screen and (max-width: 767.98px) {
+  #our_vehicles {
+    #our_vehicles_carousel {
+      .carousel-caption {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:576px){
+  #our_vehicles{
+    .carousel_indicators_xs{
+      h1{
+        font-size: $font-size-1 - 0.4rem;
+      }
+    }
+  }
+    
+}
+
+.transform_rotate{
+    transform: rotate(180deg);
+}

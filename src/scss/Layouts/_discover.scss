@@ -1,0 +1,97 @@
+#discover{
+    padding-bottom: $pd-4;
+
+    .discover_content{
+        .btn_carousel{
+            &:hover{
+                border-color: $color-orange;
+            }
+        }
+        .discover_title{
+            text-align: center;
+            h1{
+                font-size: $font-size-4;
+                margin-bottom: 0;
+            }
+            span{
+                color: $color-blue-100;
+                font-weight: 300;
+                font-size: $font-size-2;
+            }
+        }
+        .discover_item{
+            height: 450px;
+            position: relative;
+            margin-bottom: $mg-2;
+            box-shadow: $box-shadow-2;
+            .discover_item_content{
+                text-align: center;
+                position: absolute;
+                bottom: 4%;
+                left: 0;
+                h2, a{
+                    @include text(bold, $mg-2);
+                    font-size: $font-size-2;
+                    color: $color-dark-blue-100;
+                }
+                p{
+                    @include text(300, $mg-2);
+                    font-size: $font-size-1;
+                    padding: 0 $pd-3;
+                }
+                a{
+                    color: $color-blue-200;
+                    font-size: $font-size-1;
+                    text-decoration: none;
+                }
+            }
+            
+        }
+        .discover_item_6{
+            color: $color-blue-200;
+            position: relative;
+            background-color: $color-white;
+            a{
+                text-decoration: none;
+            }
+            > i{
+                font-size: $font-size-2;
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+            }
+            .discover_item_twitter{
+                position: absolute;
+                top: 20%;
+                left: 5%;
+                .discover_twitter_logo{
+                    .logo_honda{
+                        border-radius: 0.5rem;
+                        width: 15%;
+                        height: 155%;
+                        margin-right: $mg-1;
+                    }
+                    p{
+                        font-size: $font-size-1;
+                        a{
+                            color: $color-blue-200;
+                        }
+                        a:first-child{
+                            font-weight: bold;
+                        }
+                    }
+                }
+                > p{
+                    font-size: $font-size-1;
+                    color: $color-dark-blue-300;
+                }
+                .discover_twitter_interaction{
+                    color: $color-blue-200;
+                    span{
+                        margin-right: $mg-2;
+                    }
+                }
+            }
+        }
+    }
+}

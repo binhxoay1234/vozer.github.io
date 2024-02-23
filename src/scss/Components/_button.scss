@@ -1,0 +1,65 @@
+.btn-vehicle {
+  @include styleButton(
+    $color-blue-100,
+    $color-blue-100,
+    $color-white,
+    $pd-1 $pd-5,
+    $color-white,
+    $color-blue-100
+  );
+  margin-right: $mg-1;
+}
+.btn-vehicle-active {
+  @include styleButton(
+    $color-blue-100,
+    $color-white,
+    $color-blue-100,
+    $pd-1 $pd-5,
+    $color-blue-100,
+    $color-white
+  );
+}
+.btn_search {
+  @include styleButton(
+    $color-blue-100,
+    transparent,
+    $color-blue-100,
+    $pd-1 $pd-5,
+    $color-blue-100,
+    $color-white
+  );
+  transform: translateY(-$mg-1 - 1);
+}
+.btn_carousel {
+  @include styleButton(
+    $color-orange,
+    $color-orange,
+    $color-white,
+    $pd-1 $pd-2,
+    $color-white,
+    $color-orange
+  );
+}
+.btn_build {
+  @include styleButton(
+    $color-white,
+    transparent,
+    $color-white,
+    $pd-1 - 3 $pd-5,
+    $color-white,
+    $color-blue-100
+  );
+}
+.btn-function {
+  @include styleButton(
+    $color-blue-100,
+    $color-blue-100,
+    $color-white,
+    $pd-1 $pd-5,
+    $color-white,
+    $color-blue-100
+  );
+  &:hover {
+    border-color: #9bcf53;
+  }
+}

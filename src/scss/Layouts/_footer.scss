@@ -1,0 +1,116 @@
+#footer {
+  padding: $pd-6 $pd-7;
+  padding-right: 0;
+  background-color: $color-grey;
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  h1 {
+    @include text($fw-bold, $mg-3);
+    color: $color-dark-blue-200;
+    font-size: $font-size-2 - 0.2rem;
+    margin-left: 0;
+  }
+  .footer_detail {
+    
+    ul{
+        padding-left: 0;
+    }
+    ul li {
+      margin-bottom: $mg-2;
+      a {
+        font-size: $font-size-1 - 0.3rem;
+        color: $color-blue-200;
+      }
+    }
+  }
+  .footer_touch {
+    width: 100%;
+    margin-top: $mg-3;
+    border-top: $border-2;
+    display: flex;
+    justify-content: space-between;
+    padding: $pd-3 0;
+    padding-right: $pd-7;
+    .touch_left {
+        h1{
+            margin-top: 0
+        }
+      .dropdown_menu_social i{
+        @include social_icon;
+      }
+    }
+    .touch_right{
+        text-align: right;
+        p{
+            font-size: $font-size-1;
+            color: $color-dark-blue-200;
+            margin-bottom: $mg-2;
+        }
+        .btn_seatch{
+            margin-top: 0;
+        }
+        
+    }
+  }
+}
+
+// RESPONSIVE
+@media screen and (max-width:768px){
+    #footer{
+        background-color: $color-white;
+        padding: 0;
+        .col-md{
+            padding: 0;
+        }
+        
+        h1{
+            margin: 0;
+            margin-bottom: $mg-1;
+            justify-content: space-between;
+            background-color: $color-grey;
+            padding: $pd-3 $pd-3;
+            span{
+                color: $color-dark-blue-300;
+            }
+            i{
+                @include social_icon;
+                background-color: transparent;
+                border: $border-3;
+                color: $color-blue-200;
+            }
+        }
+        .footer_collapse_nav{
+            margin-top: $mg-2;
+            li{
+                padding: 0 $pd-3;
+            }
+        }
+        .col-md-12{
+            padding: 0;
+        }
+        .footer_touch{
+            padding: $pd-3 0;
+            padding-top: $pd-1;
+            background-color: $color-grey;
+            flex-wrap: wrap;
+            .touch_left{
+                width: 100%;
+                border-bottom: $border-3;
+                padding: $pd-2 $pd-3;
+                h1{
+                    padding: $pd-2 0;
+                }
+            }
+            .touch_right{
+                width: 100%;
+                text-align: left;
+                padding: $pd-2 $pd-3;
+            }
+            
+        }
+    }
+}
