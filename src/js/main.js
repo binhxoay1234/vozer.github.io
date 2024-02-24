@@ -1,4 +1,5 @@
 
+    
     new WOW().init();
     let count = "";
     $('#navbar > a').click(function () {
