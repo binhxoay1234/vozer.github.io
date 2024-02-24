@@ -4,6 +4,12 @@
         background-size: 100% 50%;
         background-repeat: no-repeat;
         background-color: $color-white;
-        
+        // background-position: center;
+        // background-size: cover;
+    }
+}
+@each $stt in (1,2,3,4,5,6){
+    .delay_#{$stt}{
+        animation-delay: 0.1s * $stt;
     }
 }

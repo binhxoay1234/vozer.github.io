@@ -33,6 +33,30 @@
   background-color: #fff;
 }
 
+.delay_1 {
+  animation-delay: 0.1s;
+}
+
+.delay_2 {
+  animation-delay: 0.2s;
+}
+
+.delay_3 {
+  animation-delay: 0.3s;
+}
+
+.delay_4 {
+  animation-delay: 0.4s;
+}
+
+.delay_5 {
+  animation-delay: 0.5s;
+}
+
+.delay_6 {
+  animation-delay: 0.6s;
+}
+
 html {
   font-size: 12px;
 }
@@ -44,7 +68,7 @@ body {
   background-color: #F5F5F5;
 }
 
-.animate__animated {
+#vehicles .animate__animated {
   animation-duration: 0.3s;
 }
 @keyframes fadeInDown {
@@ -104,6 +128,11 @@ body {
     transform: translate3d(10%, 0, 0);
   }
 }
+
+#discover .animate__animated {
+  animation-duration: 0.7s;
+}
+
 #header {
   background-color: #007cc3;
 }
@@ -779,6 +808,19 @@ body {
   padding: 50px;
   padding-top: 30px;
   border: 0.2rem solid #e5e5e5;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+#vehicles_function .vehicles_function_content .vehicles_function_item:hover {
+  transform: translateY(-5px);
+}
+#vehicles_function .vehicles_function_content .vehicles_function_item:hover .btn-function {
+  background-color: transparent;
+  color: #2198dc;
+}
+#vehicles_function .vehicles_function_content .vehicles_function_item:hover .btn_search {
+  background-color: #007cc3;
+  color: #fff;
 }
 #vehicles_function .vehicles_function_content .vehicles_function_item i {
   font-size: 4rem;
@@ -884,6 +926,14 @@ body {
   margin-right: 20px;
 }
 
+@media screen and (max-width: 1133px) {
+  #discover .discover_content .discover_item .discover_item_content {
+    top: 60%;
+  }
+  #discover .discover_content .discover_item .discover_item_content p {
+    display: none;
+  }
+}
 .btn-vehicle {
   border: 2px solid #007cc3;
   background-color: #007cc3;

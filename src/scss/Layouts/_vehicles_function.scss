@@ -12,6 +12,19 @@
             padding: $pd-6;
             padding-top: $pd-5;
             border: $border-2;
+            transition: all .5s;
+            cursor: pointer;
+            &:hover{
+                transform: translateY(- $mg-1);
+            }
+            &:hover .btn-function{
+                background-color: transparent;
+                color: $color-blue-200;
+            }
+            &:hover .btn_search{
+                background-color: $color-blue-100;
+                color: $color-white;
+            }
             i{
                 font-size: $font-size-4 - .4rem;
                 color: #265073;

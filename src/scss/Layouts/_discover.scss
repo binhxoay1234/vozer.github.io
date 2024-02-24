@@ -95,3 +95,21 @@
         }
     }
 }
+
+// RELATIVE
+@media screen and (max-width:1133px) {
+    #discover{
+        .discover_content{
+            .discover_item{
+                .discover_item_content{
+                    top: 60%;
+                    p{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }   
+}
+
+
