@@ -68,7 +68,7 @@ body {
   background-color: #F5F5F5;
 }
 
-#vehicles .animate__animated {
+#vehicles .animate__animated, #header .animate__animated {
   animation-duration: 0.3s;
 }
 @keyframes fadeInDown {
