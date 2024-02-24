@@ -740,10 +740,12 @@
   <script src="./node_modules/jquery/dist/jquery.min.js"></script>
   <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./node_modules/wow.js/dist/wow.min.js"></script>
-  
+  <script>
+    new WOW().init();
+  </script>
   <script>
     
-    new WOW().init();
+    
     let count = "";
     $('#navbar > a').click(function () {
       if (count === "") {
